@@ -1,6 +1,6 @@
 # Bank-Marketing-Prediction
 
-# [Predicting Bank Marketing Campaign Success]
+# Predicting Bank Marketing Campaign Success
 
 {This project uses machine learning to predict whether a customer will subscribe to a bank term deposit, helping marketing teams target the right people more effectively.]
 
