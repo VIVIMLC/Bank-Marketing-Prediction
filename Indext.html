@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISOM 835 Project | Predictive Analytics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --secondary: #64748b;
+            --dark: #0f172a;
+            --light: #f8fafc;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            color: var(--dark);
+            background-color: var(--light);
+        }
+
+        header {
+            background: var(--dark);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        nav {
+            background: white;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            z-index: 1000;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--secondary);
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        section {
+            padding: 4rem 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        h2 { color: var(--primary); font-size: 1.8rem; }
+
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+            margin-top: 1.5rem;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--secondary);
+            font-size: 0.9rem;
+        }
+
+        .badge {
+            background: var(--primary);
+            color: white;
+            padding: 0.2rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Predictive Analytics Semester Project</h1>
+    <p>ISOM 835: Machine Learning with Python</p>
+    <p><small>Prepared by: [Your Name]</small></p>
+</header>
+
+<nav>
+    <a href="#intro">Introduction</a>
+    <a href="#data">Data</a>
+    <a href="#method">Methodology</a>
+    <a href="#results">Results</a>
+    <a href="#conclusion">Conclusion</a>
+</nav>
+
+<div class="container">
+    
+    <section id="intro">
+        <h2>1. Introduction & Executive Summary</h2>
+        <div class="card">
+            <p>Define your business problem here. What are you trying to predict? Why does this matter to the organization?</p>
+            <ul>
+                <li><strong>Objective:</strong> To build a model that predicts [Target Variable].</li>
+                <li><strong>Impact:</strong> Improving accuracy in this area will help [Stakeholders] by [Value Proposition].</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="data">
+        <h2>2. Data Description</h2>
+        <div class="card">
+            <p>Discuss your data source and the preprocessing steps you took.</p>
+            <p><strong>Source:</strong> [Kaggle / UCI / Company Database]</p>
+            <p><strong>Preprocessing:</strong> Handling missing values, encoding categorical variables, and feature engineering.</p>
+        </div>
+    </section>
+
+    <section id="method">
+        <h2>3. Methodology <span class="badge">Python</span></h2>
+        <div class="card">
+            <p>Describe the machine learning algorithms you tested (e.g., Logistic Regression, Random Forest, XGBoost).</p>
+            <p>Briefly mention your training/testing split and any cross-validation techniques used.</p>
+        </div>
+    </section>
+
+    <section id="results">
+        <h2>4. Model Performance & Results</h2>
+        <div class="card">
+            <p>Show your findings. (Tip: You can export charts from your Jupyter Notebook as PNGs and link them here).</p>
+            <ul>
+                <li><strong>Primary Metric:</strong> [Accuracy / F1-Score / RMSE]</li>
+                <li><strong>Key Finding:</strong> The [Model Name] performed best with a score of [X.XX].</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="conclusion">
+        <h2>5. Conclusion & Recommendations</h2>
+        <div class="card">
+            <p>Summarize the business value of your project. What should the company do next based on your model's predictions?</p>
+        </div>
+    </section>
+
+</div>
+
+<div class="footer">
+    <p>&copy; 2024 ISOM 835 Project Portfolio. Built with HTML/CSS.</p>
+</div>
+
+<script>
+    // Simple smooth scrolling for navigation links
+    document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const section = document.querySelector(this.getAttribute('href'));
+            section.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+</script>
+
+</body>
+</html>
